@@ -130,10 +130,23 @@ p {
 footer {
     grid-area: footer;
     background-color: #FFBF60;
-    color: white;
     text-align: right;
     padding: 0.5em;
 }
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: Imbue;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
 
 @media only screen and (max-width: 650px) {
     
