@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-areas: 
+        "nav header"
+        "nav article"
+        "nav footer";
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: header;
+    text-align: center; 
+    padding-right: 15em;  
+}
+
+h1 {
+	font-family: Inspiration;
+	font-size: 125px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #FFBF60;
+}
+
+h4 {
+	font-family: Imbue;
+	font-size: 24px;
+	margin-top: 0;
+	color: #FFBF60;
+}
+
+nav {
+    grid-area: nav;
+    top: 0;
+    left: 0;
+    background-color: #FFBF60;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #FFBF60;
+	color: white;
+	text-align: center;
+}
+
+li a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	color: white;
+	border-style: solid;
+	border-width: 0.2em;
+	border-color: #FFBF60;
+	font-family: 'Imbue';
+	font-size: 24px;
+	letter-spacing: 0.05em;
+}
+
+li a.active {
+	background-color: white;
+	color: #FFBF60;
+	border-color: white;
+}
+
+li a:hover:not(.active) {
+	border-style: solid;
+	border-width: 0.2em;
+	border-color: white;
+
+}
+
+article {
+    grid-area: article;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 15em;
+    padding-bottom: 10em;
+    margin-bottom: 4em;
+}
+
+h5 {
+	font-family: Imbue;
+	font-size: 24px;
+	margin-top: 0;
+	color: #FFBF60;
+	margin-bottom: 0;
+}
+
+.spoons {
+    padding: 3em;
+}
+
+p a {
+	text-decoration: none;
+	font-family: Imbue;
+	font-size: 1.5em;
+	color: #FFBF60;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+}
+
+p a:hover {
+	text-decoration: underline;
+
+}
+
+p {
+	color: #3A1C00;
+	font-family: 'helvetica';
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #FFBF60;
+    color: white;
+    text-align: right;
+    padding: 0.5em;
+}
+
+@media only screen and (max-width: 650px) {
+    
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "nav"
+        "header"
+        "article"
+        "footer";
+    }
+    .sticky {
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .header-image {
+        height: 5.45em;
+        padding: 0;
+        margin: 0;
+        border-left: 4px solid white;
+        border-right: 4px solid white;
+    }
+    li a {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header{
+        padding: 0;
+    }
+    article {
+        padding: 1em;
+    }
+    .spoons {
+        padding: 1em;
+        width: 300px;
+        height: auto;
+    }
+    
+  }

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit</title>
+    <link rel="stylesheet" href="../universal-styles.css" />
+    <link rel="stylesheet" href="submit.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inspiration"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Imbue"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Submit</h1>
+        <h4>Dazzle and Amaze me!</h4>
+      </header>
+
+      <nav>
+        <div class="sticky">
+          <img
+            class="header-image"
+            src="../assets/images/corner-submit.png"
+            alt="orange and corn"
+          />
+
+          <div>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../recipes/recipes.html">Recipes</a></li>
+              <li><a class="active">Submit</a></li>
+              <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <article>
+        <form action="../confirmation/confirmation.html">
+          <div><h5>Form</h5></div>
+
+          <div class="recipe-category">
+            <p>Recipe Category:<span>*</span></p>
+            <div class="radio-block">
+              <input
+                type="radio"
+                id="savory"
+                name="category"
+                value="savory"
+                required
+              />
+              <label for="savory">Savory</label>
+            </div>
+            <div class="radio-block">
+              <input type="radio" id="sweet" name="category" value="sweet" />
+              <label for="sweet">Sweet</label>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              Does the recipe contain any of the following common allergens:
+            </p>
+            <div class="allergens-container">
+              <div>
+                <input
+                  type="checkbox"
+                  id="eggs"
+                  name="allergens"
+                  value="eggs"
+                />
+                <label for="eggs">Eggs</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="dairy"
+                  name="allergens"
+                  value="dairy"
+                />
+                <label for="dairy">Dairy</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="fish"
+                  name="allergens"
+                  value="fish"
+                />
+                <label for="fish">Fish</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="shellfish"
+                  name="allergens"
+                  value="shellfish"
+                />
+                <label for="shellfish">Shellfish</label>
+              </div>
+              <div>
+                <input type="checkbox" id="soy" name="allergens" value="soy" />
+                <label for="soy">Soy</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="wheat"
+                  name="allergens"
+                  value="wheat"
+                />
+                <label for="wheat">Wheat</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="peanuts"
+                  name="allergens"
+                  value="peanuts"
+                />
+                <label for="peanuts">Peanuts</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="treenuts"
+                  name="allergens"
+                  value="treenuts"
+                />
+                <label for="treenuts">Treenuts</label>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              <label for="veg-status">Is the recipe:<span>*</span></label>
+            </p>
+          </div>
+          <div class="select-block">
+            <select id="veg-status" name="veg-status" required>
+              <option value="">Please select...</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <option value="neither">Neither</option>
+            </select>
+          </div>
+
+          <div>
+            <p>
+              Type your recipe or paste link:<span class="compulsory">*</span>
+            </p>
+          </div>
+          <div class="textarea-block">
+            <textarea
+              id="type-recipe"
+              placeholder="Type your recipe or paste link here!"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <p>I consent to my recipe being posted online.</p>
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">Consent<span>*</span></label>
+          </div>
+          <br />
+
+          <div><h5>Terms and Conditions</h5></div>
+
+          <ul>
+            <li>
+              Level 1
+              <ul>
+                <li>
+                  Level 2
+                  <ol>
+                    <li>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua.
+                    </li>
+                    <li>
+                      At vero eos et accusam et justo duo dolores et ea rebum.
+                      Stet clita kasd gubergren, no sea takimata sanctus est
+                      Lorem ipsum dolor sit amet.
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </li>
+            <li>
+              At vero eos et accusam et justo duo dolores et ea rebum.
+              <ul>
+                <li>
+                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="input-block">
+            <input type="Submit" value="Submit" />
+          </div>
+        </form>
+      </article>
+      <footer>Coded by Emily</footer>
+    </div>
+  </body>
+</html>

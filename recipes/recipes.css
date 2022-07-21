@@ -1,0 +1,51 @@
+a > img {
+	width: 150px;
+	height: auto;
+	opacity: 0.7;
+	transition: all ease-in-out .2s;
+}
+
+a > img:hover {
+	opacity: 1;
+}
+
+article > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	gap: 1em;
+}
+
+.recipes-grid {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+}
+
+.recipes-grid > div {
+	padding: 1em;
+}
+
+table {
+	width: 45em;
+	margin-top: 1em ;
+  	border: 2px solid #FFBF60;
+ 	color: #3A1C00;
+	font-family: 'helvetica';
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+td, th {
+	border: 2px solid #3A1C00;
+	padding: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+    .recipes-grid {
+        grid-template-columns: repeat(2, 50%);
+    }
+    table {
+        width: 23em;
+    }
+}

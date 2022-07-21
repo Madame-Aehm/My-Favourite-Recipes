@@ -1,0 +1,52 @@
+.deets {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.icon {
+	width: 50px;
+	height: auto;
+	padding-right: 40px;
+	padding-top: 10px;
+    transition: all ease-in-out .2s;
+}
+
+.icon:hover {
+	width: 55px;
+	height: auto;
+	padding-right: 35px;
+	padding-top: 5px;
+    animation-name: ring-ring;
+    animation-duration: .3s;
+    animation-delay: .2s;
+}
+
+@keyframes ring-ring {
+    25% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    75% {transform: rotate(10deg);}
+}
+
+@media only screen and (max-width: 650px) {
+    iframe:first-of-type {
+        display: none;
+    }
+    .icon:hover {
+        width: 50px;
+        height: auto;
+        padding-right: 40px;
+        padding-top: 10px;
+        animation: none;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    iframe:nth-of-type(2) {
+        display: none;
+    }
+   
+
+}
