@@ -7,7 +7,7 @@ form {
     padding: 1em;
 }
 
-label, li {
+label, form li {
 	color: #3A1C00;
 	font-family: 'helvetica';
 	letter-spacing: 0.05em;
