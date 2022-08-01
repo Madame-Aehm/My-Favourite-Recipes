@@ -6,6 +6,21 @@ h1 {
 	padding-top: 1em;
 }
 
+div:first-of-type {
+	display: flex;
+	flex-direction: column;
+}
+
+h5 {
+	justify-self: first baseline;
+}
+
+table {
+	align-self: center;
+	margin-bottom: 1em;
+}
+
+
 button {
 	background-color: #FFBF60;
 	border: none;
@@ -18,14 +33,14 @@ button {
 	border-radius: 20px;
 }
 
-div {
+.buttons {
     display: flex;
     justify-content: center;
     gap: 5em;
 }
 
 @media only screen and (max-width: 650px) {
-    div {
+    .buttons {
         flex-direction: column;
         gap: 2em;
     }

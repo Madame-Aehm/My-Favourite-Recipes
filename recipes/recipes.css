@@ -25,27 +25,9 @@ article > div:first-of-type {
 	padding: 1em;
 }
 
-table {
-	width: 45em;
-	margin-top: 1em ;
-  	border: 2px solid #FFBF60;
- 	color: #3A1C00;
-	font-family: 'helvetica';
-	letter-spacing: 0.05em;
-	line-height: 1.5em;
-	text-align: center;
-}
-
-td, th {
-	border: 2px solid #3A1C00;
-	padding: 5px;
-}
-
 @media only screen and (max-width: 650px) {
     .recipes-grid {
         grid-template-columns: repeat(2, 50%);
     }
-    table {
-        width: 23em;
-    }
+   
 }

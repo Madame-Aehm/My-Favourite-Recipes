@@ -18,16 +18,33 @@
 
   <body>
     <article>
-      <div id="retrieve-values"></div>
       <h1>Submission recieved!</h1>
       <h4>Thanks so much!</h4>
 
       <div>
-        <form action="../index.html">
-          <button>Back to Homepage!</button>
-        </form>
+        <h5>You selected...</h5>
+        <table>
+          <tr>
+            <th>Recipe category</th>
+            <td id="cat">test</td>
+          </tr>
+          <tr>
+            <th>Allergens</th>
+            <td id="alle">test</td>
+          </tr>
+          <tr>
+            <th>Veggie status</th>
+            <td id="veg">test</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="buttons">
         <form action="../submit/submit.html">
           <button>Submit again?</button>
+        </form>
+        <form action="../index.html">
+          <button>Back to Homepage!</button>
         </form>
       </div>
     </article>
